@@ -112,6 +112,11 @@ export default function DocumentModal(props: IDocumentModalProps) {
       route: `/file/${document?.id}`,
     },
     {
+      title: `Edit ${fileTypeText} name`,
+      Icon: DeleteIcon,
+      onPress: () => console.log('hello!!'),
+    },
+    {
       title: `Download this ${fileTypeText}`,
       Icon: DownloadIcon,
       onPress: downloadFile,
